@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+.search {
+    margin: 10px 30px 5px 0px;
+    float: right;
+}
+.title {
+    margin: 0px 0px 0px 50px;
+    word-spacing: 10px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    float: left;
+}
+.banner {
+    margin: 0px;
+    clear: both;
+}
+.banner div {
+    background-image: url(image/banner1.png);
+    background-size: 100% 100%;
+    animation: example 4s;
+    animation-iteration-count: infinite;
+    height: 200px;
+}
+.nav {
+    margin: 0px;
+    padding: 10px 20px;
+    background-color: rgb(125, 90, 130);
+}
+@keyframes example {
+    0%   {background-image: url(image/banner1.png);}
+    25%  {background-image: url(image/banner2.png);}
+    50%  {background-image: url(image/banner3.png);}
+    100% {background-image: url(image/banner4.png);}
+}
+.section1 {
+    margin: 0px;
+    padding: 10px;
+    background-color: rgb(240, 240, 240);
+}
+.section2 {
+    margin: 0px;
+    padding: 10px;
+    background-color: white;
+    line-height: 35px;
+}
+.main {
+    margin: 0px;
+    padding: 10px;
+    width: 100%; 
+}
+.main p {
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.footer {
+    margin: 0px;
+    padding: 30px;
+    background-color: rgb(125, 80, 130);
+    text-align: center;
+    color: white;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+}
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .section1 {
+        position: sticky;
+        float: right;
+    }
+    .section2 {
+        position: sticky;
+        float: left;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* For Tablets */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .section2 {
+        position: sticky;
+        float: left;
+    }
+}
